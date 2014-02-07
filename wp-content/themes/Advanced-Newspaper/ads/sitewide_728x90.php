@@ -1,0 +1,1 @@
+<?php echo $npdv_options["ad728x90"]; ?>

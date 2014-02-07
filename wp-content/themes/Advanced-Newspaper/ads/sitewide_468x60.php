@@ -1,0 +1,1 @@
+<?php echo $npdv_options["adh468x60"]; ?>

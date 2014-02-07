@@ -1,0 +1,539 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WpAdvNewspaper v1.33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-19 13:24+0100\n"
+"PO-Revision-Date: 2010-05-17 21:33+0300\n"
+"Last-Translator: Mehmet <mhmtozek@gmail.com>\n"
+"Language-Team: Michael Nandzik <info@actuzine.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ WpAdvNewspaper
+#: 404.php:5
+#: 404.php:10
+#: header.php:9
+msgid "404 Error! Page Not Found"
+msgstr "404 Erreur! Page inexistante"
+
+#@ WpAdvNewspaper
+#: archive-default.php:44
+msgid "Posted in"
+msgstr "Posté dans"
+
+#@ WpAdvNewspaper
+#: archive-default.php:44
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+#: home.php:271
+#: home.php:296
+#: home.php:321
+#: home.php:346
+#: home.php:373
+#: home.php:398
+#: home.php:423
+#: home.php:448
+msgid "Read More &raquo;"
+msgstr "En savoir plus &raquo;"
+
+#@ WpAdvNewspaper
+#: archive-default.php:49
+msgid "Sorry! No post matched your criterias"
+msgstr "Désolé. Auncun article trouvé"
+
+#@ WpAdvNewspaper
+#: archive-media.php:13
+#: tpl-category-media.php:22
+msgid "Permalink"
+msgstr "Lien permanent"
+
+#@ WpAdvNewspaper
+#: archive.php:8
+#: tpl-category-media.php:6
+msgid "Category archives for:"
+msgstr "Categorie des archives pour:"
+
+#@ WpAdvNewspaper
+#: archive.php:12
+msgid "Posts tagged as:"
+msgstr "Article taggé comme:"
+
+#@ WpAdvNewspaper
+#: archive.php:16
+#: archive.php:20
+#: archive.php:24
+msgid "Archive for:"
+msgstr "Archive pour:"
+
+#@ WpAdvNewspaper
+#: author.php:7
+msgid "Author Archive"
+msgstr "Auteur de l'Archive"
+
+#@ WpAdvNewspaper
+#: author.php:18
+msgid "Stories written by"
+msgstr "Article écrit par"
+
+#@ WpAdvNewspaper
+#: comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Ne chargez pas cette page directement. Merci !"
+
+#@ WpAdvNewspaper
+#: comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Cet article est protégé par un mot de passe. Entrez-le pour voir les commentaires."
+
+#@ WpAdvNewspaper
+#: comments.php:21
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+msgid "No Comment"
+msgstr "Pas de commentaire"
+
+#@ WpAdvNewspaper
+#: comments.php:21
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+msgid "1 Comment"
+msgstr "1 Commentaire"
+
+#@ WpAdvNewspaper
+#: comments.php:21
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#@ WpAdvNewspaper
+#: comments.php:21
+msgid "for"
+msgstr "pour"
+
+#@ WpAdvNewspaper
+#: comments.php:40
+msgid "Comments are closed"
+msgstr "Les commentaires sont fermés"
+
+#@ WpAdvNewspaper
+#: comments.php:47
+msgid "You must be logged in to post a comment"
+msgstr "Vous devez êtres connecté pour laisser un commentaire"
+
+#@ WpAdvNewspaper
+#: comments.php:47
+msgid "Login"
+msgstr "Se connecter"
+
+#@ WpAdvNewspaper
+#: comments.php:50
+msgid "Leave a Reply"
+msgstr "Répondre"
+
+#@ WpAdvNewspaper
+#: comments.php:60
+msgid "Logged in as:"
+msgstr "Connecté sous:"
+
+#@ WpAdvNewspaper
+#: comments.php:60
+msgid "Logout"
+msgstr "Deconnexion"
+
+#@ WpAdvNewspaper
+#: comments.php:64
+msgid "Name (required)"
+msgstr "Nom (requis)"
+
+#@ WpAdvNewspaper
+#: comments.php:67
+msgid "Mail (will not be published) (required)"
+msgstr "E-Mail (ne sera pas publié) (requis)"
+
+#@ WpAdvNewspaper
+#: comments.php:70
+msgid "Website"
+msgstr "Site Web"
+
+#@ WpAdvNewspaper
+#: footer.php:14
+msgid "RSS"
+msgstr "RSS"
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Posts"
+msgstr "Articles"
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Theme Control Panel"
+msgstr "Panneau de contrôle du thème"
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Write New Post"
+msgstr "Ecrire un nouvel article"
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Designed by"
+msgstr "Conçu par"
+
+#@ WpAdvNewspaper
+#: header.php:10
+#: search.php:7
+msgid "Search results for:"
+msgstr "Résultats pour:"
+
+#@ WpAdvNewspaper
+#: header.php:57
+msgid "Stay Connected"
+msgstr "Rester connecté"
+
+#@ WpAdvNewspaper
+#: header.php:59
+msgid "Subscribe to latest posts in RSS"
+msgstr "Souscrire aux derniers articles en RSS"
+
+#@ WpAdvNewspaper
+#: header.php:59
+msgid "Latest Posts in RSS"
+msgstr "Derniers articles en RSS"
+
+#@ WpAdvNewspaper
+#: header.php:70
+msgid "Subscribe to latest comments in RSS"
+msgstr "Souscrire aux derniers commentaires en RSS"
+
+#@ WpAdvNewspaper
+#: header.php:70
+msgid "Latest Comments in RSS"
+msgstr "Derniers commentaires en RSS"
+
+#@ WpAdvNewspaper
+#: header.php:71
+msgid "Subscribe to latest posts via email"
+msgstr "Souscrire aux derniers articles par email"
+
+#@ WpAdvNewspaper
+#: header.php:71
+msgid "Subscribe by e-mail"
+msgstr "Souscrire par email"
+
+#@ WpAdvNewspaper
+#: header.php:72
+msgid "follow on twitter"
+msgstr "Suivre sur twitter"
+
+#@ WpAdvNewspaper
+#: header.php:72
+msgid "Follow us on Twitter"
+msgstr "Nous suivre sur Twitter"
+
+#@ WpAdvNewspaper
+#: header.php:73
+msgid "Connect on facebook"
+msgstr "Connexion sur facebook"
+
+#@ WpAdvNewspaper
+#: header.php:73
+msgid "Connect on Facebook"
+msgstr "Connexion sur Facebook"
+
+#@ WpAdvNewspaper
+#: header.php:112
+msgid "Home"
+msgstr "Accueil"
+
+#@ WpAdvNewspaper
+#: home.php:85
+#: home.php:110
+#: home.php:165
+msgid " &raquo;"
+msgstr " &raquo;"
+
+#@ WpAdvNewspaper
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+#: home.php:226
+#: home.php:271
+#: home.php:296
+#: home.php:321
+#: home.php:346
+#: home.php:373
+#: home.php:398
+#: home.php:423
+#: home.php:448
+msgid "Edit"
+msgstr "Editer"
+
+#@ WpAdvNewspaper
+#: home.php:146
+msgid "&raquo; "
+msgstr "&raquo; "
+
+#@ WpAdvNewspaper
+#: innerNarrowSidebar.php:6
+msgid "Photo Gallery"
+msgstr "Galerie photo"
+
+#@ WpAdvNewspaper
+#: innerWideSidebar.php:13
+msgid "Recently Commented"
+msgstr "Commentaires récents"
+
+#@ WpAdvNewspaper
+#: innerWideSidebar.php:21
+msgid "Recent Entries"
+msgstr "Entrées récentes"
+
+#@ WpAdvNewspaper
+#: page-Archives.php:39
+#: page-Archives.php:61
+#: page-NarrowLeft-WideRight.php:39
+#: page-NarrowSidebar-Left.php:38
+#: page-NarrowSidebar-Right.php:37
+#: page-NoSidebar.php:36
+#: page-WideLeft-NarrowRight.php:38
+#: page-WideSidebar-Left.php:38
+#: page-WideSidebar-Right.php:36
+#: page-Widgetized.php:45
+#: page.php:32
+#: page.php:37
+#: single.php:42
+#: single.php:54
+msgid "Edit This Entry"
+msgstr "Editer cette entrée"
+
+#@ WpAdvNewspaper
+#: searchform.php:3
+#: searchform.php:4
+msgid "Search in site..."
+msgstr "Chercher dans le site..."
+
+#@ WpAdvNewspaper
+#: sidebar.php:11
+msgid "Video"
+msgstr "Vidéo"
+
+#@ WpAdvNewspaper
+#: sidebar.php:24
+msgid "Featured Links"
+msgstr "Liens spéciaux"
+
+#@ WpAdvNewspaper
+#: sidebar.php:33
+msgid "Search Archive"
+msgstr "Chercher dans les archives"
+
+#@ WpAdvNewspaper
+#: sidebar.php:35
+msgid "Search by Date"
+msgstr "Chercher par date"
+
+#@ WpAdvNewspaper
+#: sidebar.php:38
+msgid "Select Month"
+msgstr "Choisir un mois"
+
+#@ WpAdvNewspaper
+#: sidebar.php:43
+msgid "Search by Category"
+msgstr "Chercher par catégorie"
+
+#@ WpAdvNewspaper
+#: sidebar.php:58
+msgid "Search with Google"
+msgstr "Chercher avec Google"
+
+#@ WpAdvNewspaper
+#: sidebar.php:60
+msgid "Write keyword and hit return"
+msgstr "Entrez un mot clef et validez"
+
+#@ WpAdvNewspaper
+#: single.php:50
+msgid "Short URL"
+msgstr "URL courte"
+
+#@ WpAdvNewspaper
+#: single.php:72
+msgid "Posted by"
+msgstr "Posté par"
+
+#@ WpAdvNewspaper
+#: single.php:77
+msgid "on"
+msgstr "le"
+
+#@ WpAdvNewspaper
+#: single.php:77
+msgid "Filed under"
+msgstr "inséré dans"
+
+#@ WpAdvNewspaper
+#: single.php:78
+msgid "You can follow any responses to this entry through the"
+msgstr "Vous pouvez suivre les réponses de cet article à travers le"
+
+#@ WpAdvNewspaper
+#: single.php:81
+msgid "You can leave a response or trackback to this entry"
+msgstr "Vous pouvez répondre ou laisser un trackback à cet article"
+
+#@ WpAdvNewspaper
+#: single.php:84
+msgid "Responses are currently closed, but you can trackback from your own site."
+msgstr "Les réponses sont fermées mais vous pouvez laisser un trackback depuis votre site."
+
+#@ WpAdvNewspaper
+#: single.php:87
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Vous pouvez aller à la fin et répondre. Le Ping est actuellement interdit."
+
+#@ WpAdvNewspaper
+#: single.php:90
+msgid "Both comments and pings are currently closed."
+msgstr "Les commentaires et les pings sont actuellement fermés."
+
+#: includes/theme-comments.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: includes/theme-comments.php:13
+#, php-format
+msgid "%1$s - %2$s"
+msgstr ""
+
+#@ WpAdvNewspaper
+#: includes/theme-comments.php:13
+msgid "(Edit)"
+msgstr "(Editer)"
+
+#@ WpAdvNewspaper
+#: includes/theme-comments.php:17
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de validation."
+
+#@ WpAdvNewspaper
+#: includes/theme-control-panel.php:14
+msgid "Theme Settings"
+msgstr "Options du thème"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Sunday"
+msgstr "dimanche"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Monday"
+msgstr "lundi"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Tuesday"
+msgstr "mardi"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Wednesday"
+msgstr "mercredi"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Thursday"
+msgstr "jeudi"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Friday"
+msgstr "vendredi"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Saturday"
+msgstr "samedi"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "January"
+msgstr "janvier"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "February"
+msgstr "février"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "March"
+msgstr "mars"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "April"
+msgstr "avril"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "May"
+msgstr "mai"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "June"
+msgstr "juin"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "July"
+msgstr "juillet"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "August"
+msgstr "août"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "September"
+msgstr "septembre"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "October"
+msgstr "octobre"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "November"
+msgstr "novembre"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "December"
+msgstr "décembre"
+

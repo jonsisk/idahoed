@@ -1,0 +1,10 @@
+body {
+background-color: transparent;
+font-size: 12pt;
+font-family:'Times New Roman',Times,serif;
+color:#000000; }
+
+#masthead, #header, #navcats, #navpages, #narrowSidebar, #wideSidebar, #entryMeta, .share, #respond, #leaveComment, #footerPages, #footerCatBar, .comment, h3#comments {display:none;}
+
+.post {width:100%}
+.post img {float:left;margin: 0 10px 5px 0;}

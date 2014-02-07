@@ -1,0 +1,28 @@
+#optionsForm h1,h2,h3,h4,h5,h6,p {margin:0;padding:0;}
+#optionsForm {font:11px verdana,sans-serif;margin-top:20px;position:relative;width:760px;}
+#optionsForm p{font:11px verdana, sans-serif;margin-bottom:4px;}
+#optionsForm h2 {background:#efefef;padding:5px;font:normal 22px arial,verdana,sans-serif;margin-top:10px;position:relative;}
+#optionsForm h2 span {position:absolute;right:10px;top:13px;}
+#optionsForm h3 {font:bold 12px arial,verdana,sans-serif;margin:0 0 5px 3px;}
+#ex_hide {position:absolute;top:20px;right:0;width:300px;font-weight:bold;}
+#panelLeft {width:760px;}
+.innerBox {background:#fff;padding:10px 10px 0;border:1px solid #efefef;}
+.innerBoxH {padding:10px 6px;border:1px solid #ccc;background:#f5f5f5;margin-bottom:10px;}
+.inputN {border:1px solid #aaa;font:11px verdana, sans-serif;padding:4px;width:250px; margin-right:7px;}
+.selectm {width:250px;display:block;margin-bottom:10px;}
+.selectminline {width:230px;display:inline;margin-bottom:10px;}
+.innerBox  .selectCat {width:200px;margin-bottom:10px;}
+.checkb {width:20px;}
+.inputID {width:50px;margin-right:7px;margin-bottom:7px;}
+.innerBox .textarea {width:355px;margin-bottom:15px;padding:5px;height:130px;color:#777;font-size:11px;line-height:15px;border:1px solid #ccc;}
+.innerBox .textareas {width:300px;height:40px;padding:5px;color:#777;font-size:11px;line-height:15px;border:1px solid #ccc;}
+.innerBox .left {float:left;width:355px;height:170px;}
+.innerBox .right {float:right;width:355px;height:170px;}
+.innerBox #ads label {padding-left:5px;font-size:12px;}
+.innerBox  .mInput {width:20px;}
+#gab_rssbox p{font:bold 12px arial,verdana,sans-serif;padding-bottom:4px;}
+#gab_rssbox a.gab_rss {background:url(../../images/rss.gif) no-repeat left center;padding:0 7px 0 18px;display:inline;}
+#gab_rssbox a.gab_twit {background:url(../../images/twitter.png) no-repeat left center;padding:0 7px 0 18px;display:inline;}
+#gab_rssbox a.gab_fb {background:url(../../images/facebook.png) no-repeat left center;padding:0 7px 0 18px;display:inline;}
+#gab_rssbox a {color:#2C78B9;}
+#gab_rssbox a:hover {color:#FF9600}

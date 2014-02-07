@@ -1,0 +1,537 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WpAdvNewspaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 17:00+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mehmet <mhmtozek@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: C:/Users/Intelioum/Desktop/WpAdvNewspaper/\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: C:/Users/Intelioum/Desktop/WpAdvNewspaper\n"
+
+#@ WpAdvNewspaper
+#: 404.php:5
+#: 404.php:10
+#: header.php:9
+msgid "404 Error! Page Not Found"
+msgstr "Ошибка 404! Страница не найдена"
+
+#@ WpAdvNewspaper
+#: archive-default.php:44
+msgid "Posted in"
+msgstr "Размещено в"
+
+#@ WpAdvNewspaper
+#: archive-default.php:44
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+#: home.php:271
+#: home.php:296
+#: home.php:321
+#: home.php:346
+#: home.php:373
+#: home.php:398
+#: home.php:423
+#: home.php:448
+msgid "Read More &raquo;"
+msgstr "Читать далее &raquo;"
+
+#@ WpAdvNewspaper
+#: archive-default.php:49
+msgid "Sorry! No post matched your criterias"
+msgstr "Извините, нет результатов по вашему запросу"
+
+#@ WpAdvNewspaper
+#: archive-media.php:13
+#: tpl-category-media.php:22
+msgid "Permalink"
+msgstr "Постоянная ссылка"
+
+#@ WpAdvNewspaper
+#: archive.php:8
+#: tpl-category-media.php:6
+msgid "Category archives for:"
+msgstr "Архив категории:"
+
+#@ WpAdvNewspaper
+#: archive.php:12
+msgid "Posts tagged as:"
+msgstr "Теги:"
+
+#@ WpAdvNewspaper
+#: archive.php:16
+#: archive.php:20
+#: archive.php:24
+msgid "Archive for:"
+msgstr "Архив:"
+
+#@ WpAdvNewspaper
+#: author.php:7
+msgid "Author Archive"
+msgstr "Архив автора"
+
+#@ WpAdvNewspaper
+#: author.php:18
+msgid "Stories written by"
+msgstr "Написал"
+
+#@ WpAdvNewspaper
+#: comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Пожалуйста, не загружайте эту страницу напрямую. Спасибо!"
+
+#@ WpAdvNewspaper
+#: comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Эта запись защищена паролем. Введите пароль для просмотра и добавления комментариев."
+
+#@ WpAdvNewspaper
+#: comments.php:21
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+msgid "No Comment"
+msgstr "Комментариев нет"
+
+#@ WpAdvNewspaper
+#: comments.php:21
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+msgid "1 Comment"
+msgstr "1 Комментарий"
+
+#@ WpAdvNewspaper
+#: comments.php:21
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+msgid "% Comments"
+msgstr "% Комментарий"
+
+#@ WpAdvNewspaper
+#: comments.php:21
+msgid "for"
+msgstr "для"
+
+#@ WpAdvNewspaper
+#: comments.php:40
+msgid "Comments are closed"
+msgstr "Комментарии закрыты"
+
+#@ WpAdvNewspaper
+#: comments.php:47
+msgid "You must be logged in to post a comment"
+msgstr "Для того, что бы оставить комментарий - авторизируйтесь"
+
+#@ WpAdvNewspaper
+#: comments.php:47
+msgid "Login"
+msgstr "Войти"
+
+#@ WpAdvNewspaper
+#: comments.php:50
+msgid "Leave a Reply"
+msgstr "Ответить"
+
+#@ WpAdvNewspaper
+#: comments.php:60
+msgid "Logged in as:"
+msgstr "Вы вошли как:"
+
+#@ WpAdvNewspaper
+#: comments.php:60
+msgid "Logout"
+msgstr "Выйти"
+
+#@ WpAdvNewspaper
+#: comments.php:64
+msgid "Name (required)"
+msgstr "Имя (обязательно)"
+
+#@ WpAdvNewspaper
+#: comments.php:67
+msgid "Mail (will not be published) (required)"
+msgstr "Почта (e-mail нами не разглашается, обязательно к заполнению)"
+
+#@ WpAdvNewspaper
+#: comments.php:70
+msgid "Website"
+msgstr "Сайт"
+
+#@ WpAdvNewspaper
+#: footer.php:14
+msgid "RSS"
+msgstr "RSS"
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Posts"
+msgstr "Cайта"
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Theme Control Panel"
+msgstr ""
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Write New Post"
+msgstr ""
+
+#@ gabfirethemes
+#: footer.php:21
+msgid "Designed by"
+msgstr ""
+
+#@ WpAdvNewspaper
+#: header.php:10
+#: search.php:7
+msgid "Search results for:"
+msgstr "Результаты поиска:"
+
+#@ WpAdvNewspaper
+#: header.php:57
+msgid "Stay Connected"
+msgstr "Оставайтесь на связи"
+
+#@ WpAdvNewspaper
+#: header.php:59
+msgid "Subscribe to latest posts in RSS"
+msgstr "Подписаться на новости по RSS"
+
+#@ WpAdvNewspaper
+#: header.php:59
+msgid "Latest Posts in RSS"
+msgstr "Последнии записи RSS"
+
+#@ WpAdvNewspaper
+#: header.php:70
+msgid "Subscribe to latest comments in RSS"
+msgstr "Подписаться на свежие комментарии по RSS"
+
+#@ WpAdvNewspaper
+#: header.php:70
+msgid "Latest Comments in RSS"
+msgstr "Свежие комментарии RSS"
+
+#@ WpAdvNewspaper
+#: header.php:71
+msgid "Subscribe to latest posts via email"
+msgstr "Подписка на свежие новости на email"
+
+#@ WpAdvNewspaper
+#: header.php:71
+msgid "Subscribe by e-mail"
+msgstr "Подписка на email"
+
+#@ WpAdvNewspaper
+#: header.php:72
+msgid "follow on twitter"
+msgstr "публиковать в twitter"
+
+#@ WpAdvNewspaper
+#: header.php:72
+msgid "Follow us on Twitter"
+msgstr "Перейти в twitter"
+
+#@ WpAdvNewspaper
+#: header.php:73
+msgid "Connect on facebook"
+msgstr "Подключиться к facebook"
+
+#@ WpAdvNewspaper
+#: header.php:73
+msgid "Connect on Facebook"
+msgstr "Подключение к Facebook"
+
+#@ WpAdvNewspaper
+#: header.php:112
+msgid "Home"
+msgstr "Главная"
+
+#@ WpAdvNewspaper
+#: home.php:85
+#: home.php:110
+#: home.php:165
+msgid " &raquo;"
+msgstr " &raquo;"
+
+#@ WpAdvNewspaper
+#: home.php:87
+#: home.php:115
+#: home.php:170
+#: home.php:195
+#: home.php:226
+#: home.php:271
+#: home.php:296
+#: home.php:321
+#: home.php:346
+#: home.php:373
+#: home.php:398
+#: home.php:423
+#: home.php:448
+msgid "Edit"
+msgstr "Редактировать"
+
+#@ WpAdvNewspaper
+#: home.php:146
+msgid "&raquo; "
+msgstr "&raquo; "
+
+#@ WpAdvNewspaper
+#: innerNarrowSidebar.php:6
+msgid "Photo Gallery"
+msgstr "Фотогалерея"
+
+#@ WpAdvNewspaper
+#: innerWideSidebar.php:13
+msgid "Recently Commented"
+msgstr "Последние комментарии"
+
+#@ WpAdvNewspaper
+#: innerWideSidebar.php:21
+msgid "Recent Entries"
+msgstr "Последние записи"
+
+#@ WpAdvNewspaper
+#: page-Archives.php:39
+#: page-Archives.php:61
+#: page-NarrowLeft-WideRight.php:39
+#: page-NarrowSidebar-Left.php:38
+#: page-NarrowSidebar-Right.php:37
+#: page-NoSidebar.php:36
+#: page-WideLeft-NarrowRight.php:38
+#: page-WideSidebar-Left.php:38
+#: page-WideSidebar-Right.php:36
+#: page-Widgetized.php:45
+#: page.php:32
+#: page.php:37
+#: single.php:42
+#: single.php:54
+msgid "Edit This Entry"
+msgstr "Редактировать эту запись"
+
+#@ WpAdvNewspaper
+#: searchform.php:3
+#: searchform.php:4
+msgid "Search in site..."
+msgstr "Поиск по сайту"
+
+#@ WpAdvNewspaper
+#: sidebar.php:11
+msgid "Video"
+msgstr "Видео"
+
+#@ WpAdvNewspaper
+#: sidebar.php:24
+msgid "Featured Links"
+msgstr "Рекомендуемые ссылки"
+
+#@ WpAdvNewspaper
+#: sidebar.php:33
+msgid "Search Archive"
+msgstr "Поиск по архиву"
+
+#@ WpAdvNewspaper
+#: sidebar.php:35
+msgid "Search by Date"
+msgstr "Поиск по дате"
+
+#@ WpAdvNewspaper
+#: sidebar.php:38
+msgid "Select Month"
+msgstr "Выберите месяц"
+
+#@ WpAdvNewspaper
+#: sidebar.php:43
+msgid "Search by Category"
+msgstr "Поиск по категориям"
+
+#@ WpAdvNewspaper
+#: sidebar.php:58
+msgid "Search with Google"
+msgstr "Поиск с Google"
+
+#@ WpAdvNewspaper
+#: sidebar.php:60
+msgid "Write keyword and hit return"
+msgstr "Создайте ключевое слово и нажмите назад"
+
+#@ WpAdvNewspaper
+#: single.php:50
+msgid "Short URL"
+msgstr "Короткий URL"
+
+#@ WpAdvNewspaper
+#: single.php:72
+msgid "Posted by"
+msgstr "Написал"
+
+#@ WpAdvNewspaper
+#: single.php:77
+msgid "on"
+msgstr "в"
+
+#@ WpAdvNewspaper
+#: single.php:77
+msgid "Filed under"
+msgstr "Соответствие"
+
+#@ WpAdvNewspaper
+#: single.php:78
+msgid "You can follow any responses to this entry through the"
+msgstr "Вы можете перейти к обсуждениям записи"
+
+#@ WpAdvNewspaper
+#: single.php:81
+msgid "You can leave a response or trackback to this entry"
+msgstr "Вы можете сделать trackback вашей записи"
+
+#@ WpAdvNewspaper
+#: single.php:84
+msgid "Responses are currently closed, but you can trackback from your own site."
+msgstr "Ответы на данный момент закрыты, но вы можете посредством trackback отвечать с вашего сайта"
+
+#@ WpAdvNewspaper
+#: single.php:87
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Вы можете пропустить до конца и оставить ответ. Pinging в настоящее время не допускается."
+
+#@ WpAdvNewspaper
+#: single.php:90
+msgid "Both comments and pings are currently closed."
+msgstr "Все комментарии и пинги в настоящее время запрещены."
+
+#@ WpAdvNewspaper
+#: includes/theme-comments.php:13
+msgid "(Edit)"
+msgstr "(Редактировать)"
+
+#@ WpAdvNewspaper
+#: includes/theme-comments.php:17
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: includes/theme-comments.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: includes/theme-comments.php:13
+#, php-format
+msgid "%1$s - %2$s"
+msgstr ""
+
+#@ WpAdvNewspaper
+#: includes/theme-control-panel.php:14
+msgid "Theme Settings"
+msgstr "Настройки Темы"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Monday"
+msgstr "Понедельник"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Tuesday"
+msgstr "Вторник"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Wednesday"
+msgstr "Среда"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Thursday"
+msgstr "Четверг"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Friday"
+msgstr "Пятница"
+
+#@ WpAdvNewspaper
+#: header.php:86
+msgid "Saturday"
+msgstr "Суббота"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "January"
+msgstr "Январь"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "February"
+msgstr "Февраль"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "March"
+msgstr "Март"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "April"
+msgstr "Апрель"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "May"
+msgstr "Май"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "June"
+msgstr "Июнь"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "July"
+msgstr "Июль"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "August"
+msgstr "Август"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "September"
+msgstr "Сентябрь"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "October"
+msgstr "Октябрь"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "November"
+msgstr "Ноябрь"
+
+#@ WpAdvNewspaper
+#: header.php:87
+msgid "December"
+msgstr "Декабрь"
+

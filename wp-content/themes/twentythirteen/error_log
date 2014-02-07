@@ -1,0 +1,2 @@
+[28-Dec-2013 12:13:19 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/idahoedo/public_html/wp-content/themes/twentythirteen/404.php on line 10
+[29-Dec-2013 05:52:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/idahoedo/public_html/wp-content/themes/twentythirteen/404.php on line 10

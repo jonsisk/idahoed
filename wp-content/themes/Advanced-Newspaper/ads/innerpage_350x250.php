@@ -1,0 +1,1 @@
+<?php echo $npdv_options["ad300x250_inner"]; ?>
