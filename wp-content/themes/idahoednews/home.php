@@ -224,7 +224,16 @@ ul.enterprise a:hover {
 				<!-- End of first set of entries to the right of featured slider -->
 			<?php } ?>
 			
+			<!-- Start Bill Tracker -->
+					
+			<div class="midColPost">
+				<span class="titleCatName">Special Legislative Coverage</span>
+				<a href="/2014-voter-guide"><img src="http://www.idahoednews.org/wp-content/themes/idahoednews/images/bill-tracker-homepage.png" /></a>
+			</div>
+			
 			<!-- Start Enterprise Package -->
+			<?php /* Disabled for bill tracker
+			
 			<div class="midColPost">
 				<span class="titleCatName"><?php echo $npdv_options["ien_enterprise_headline"];?></span>
 				<ul class=enterprise>
@@ -236,6 +245,8 @@ ul.enterprise a:hover {
 					<li><strong><a style="color:#734337" href="/tag/<?php echo $npdv_options["ien_enterprise_tag"]?>"><?php echo $npdv_options["ien_enterprise_category"]?> </a></strong></li>
 				</ul>
 			</div>
+			
+			*/?>
 			<!-- End Enterprise Package -->
 			
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('PrimaryMid2') ) : ?>	
