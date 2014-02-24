@@ -8,4 +8,43 @@
 	
 	require_once (get_stylesheet_directory() . '/includes/theme-control-panel.php');
 	
+	function remove_parent_widgets(){
+
+	// Unregister the Parent sidebars
+	unregister_sidebar( 'PrimaryLeft1' );
+	unregister_sidebar( 'PrimaryLeft2' );
+	unregister_sidebar( 'PrimaryMid1' );
+	unregister_sidebar( 'PrimaryMid2' );
+	unregister_sidebar( 'PrimaryRight1' );
+	unregister_sidebar( 'PrimaryRight2' );
+	unregister_sidebar( 'SecondaryLeft1' );
+	unregister_sidebar( 'SecondaryLeft2' );
+	unregister_sidebar( 'SecondaryMid1' );
+	unregister_sidebar( 'SecondaryMid2' );
+	unregister_sidebar( 'SecondaryRight1' );
+	unregister_sidebar( 'SecondaryRight2' );
+	unregister_sidebar( 'Subnews_1x8' );
+	unregister_sidebar( 'Subnews_2x8' );
+	unregister_sidebar( 'Subnews_3x8' );
+	unregister_sidebar( 'Subnews_4x8' );
+	unregister_sidebar( 'Subnews_5x8' );
+	unregister_sidebar( 'Subnews_6x8' );
+	unregister_sidebar( 'Subnews_7x8' );
+	unregister_sidebar( 'Subnews_8x8' );
+	unregister_sidebar( 'MainP_Sidebar1' );
+	unregister_sidebar( 'MainP_Sidebar2' );
+	unregister_sidebar( 'MainP_Sidebar3' );
+	unregister_sidebar( 'innernarrowSidebar1' );
+	unregister_sidebar( 'innernarrowSidebar2' );
+	unregister_sidebar( 'FooterCategories' );
+	unregister_sidebar( 'FooterPages' );
+	unregister_sidebar( 'FooterThemeInfo' );
+	unregister_sidebar( 'Menu_Masthead' );
+	unregister_sidebar( 'Menu_Categories' );
+	unregister_sidebar( 'Menu_Pages' );
+	unregister_sidebar( 'CustomPageWidget' );
+	unregister_sidebar( 'SinglePostWidget' );
+}
+add_action( 'widgets_init', 'remove_parent_widgets', 11 );
+	
 ?>
