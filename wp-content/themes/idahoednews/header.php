@@ -53,14 +53,7 @@
 <div id="wrapper">
 	<div id="header">
 		<div id="header_logo"><a href="/"><img src="<?php bloginfo('stylesheet_directory')?>/images/logo.png" /></a></div>
-		<div id="header_date"><?php echo date('l, F jS Y');?></div>
-
-		<div id="header_social">
-			<a href="/?feed=rss2"><img src="<?php bloginfo('stylesheet_directory')?>/images/t-rss.png" /></a>
-			<a href="http://www.twitter.com/idahoednews"><img src="<?php bloginfo('stylesheet_directory')?>/images/t-twitter.png" /></a>
-			<a href="http://www.facebook.com/idahoednews"><img src="<?php bloginfo('stylesheet_directory')?>/images/t-facebook.png" /></a>
-		</div>
-		
+		<div id="header_date"><?php echo date('l, F jS Y');?>
 		<div id="header_newsletter">
 			<style type="text/css">
 				#mc_embed_signup{background:#fff; clear:left; font:10px Helvetica,Arial,sans-serif; }
@@ -68,12 +61,20 @@
 				We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 			</style>
 			<form action="http://boisestate.us4.list-manage.com/subscribe/post?u=5be8de5937d5d7832b6259d69&amp;id=622c84586f" method="post" id=	"mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<label for="mce-EMAIL">SUBSCRIBE TO OUR NEWSLETTER</label><br>
 				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<input type="submit" value="Subscribe to Newsletter" name="subscribe" id="mc-embedded-subscribe" class="button">
 			</form>
-		</div>	
-				
+		</div>
+		</div>
+<?php /*		<div id="header_social">
+			<a href="/?feed=rss2"><img src="<?php bloginfo('stylesheet_directory')?>/images/t-rss.png" /></a>
+			<a href="http://www.twitter.com/idahoednews"><img src="<?php bloginfo('stylesheet_directory')?>/images/t-twitter.png" /></a>
+			<a href="http://www.facebook.com/idahoednews"><img src="<?php bloginfo('stylesheet_directory')?>/images/t-facebook.png" /></a>
+		</div>
+*/ ?>
+		<div id="idahoedtrends">
+			<a href="http://www.idahoedtrends.org/" target=_blank><img src="<?php echo  get_stylesheet_directory_uri();?>/images/idaho-ed-trends.png" /></a>
+		</div>
 		<div class="clear"></div>
 	</div>
 	<div id="navcats">
