@@ -58,9 +58,7 @@ body {
 /* CHILD THEME SETTINGS AND MODIFIED PARENT THEME SETTINGS */
 /* ------- Header ------- */
 #header { /*Wraps quotes and site name*/
-	min-height:100px;
-	height: auto !important; /* IE6 Min height hack */
-	height: 120px;
+	height: 136px;
 	}
 	
 #header_logo {
@@ -76,17 +74,20 @@ body {
 	}
 	
 #header_newsletter {
-	float:right;
 	text-align:center;
-//	background:#E9F4F1;
-	padding: 2px 5px 2px 5px;
+	padding: 10px 0px;
 	font: normal 10px helvetica, arial;
-	clear:right;
 	}
 	
 #header_newsletter input {
 	font: normal 10px arial;
 	margin-top:2px;
+	padding: 3px 7px;
+	border-radius: 5px;
+	}
+	
+#header_newsletter .email {
+	width: 150px;
 	}
 	
 #header_social {
@@ -98,6 +99,11 @@ body {
 #header_social a{
 	float:right;
 	margin:5px;
+	}
+
+#idahoedtrends {
+	float: right;
+	margin: 30px 10px 0;
 	}
 	
 #search{
