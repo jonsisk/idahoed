@@ -220,6 +220,11 @@ class WPtouchProThree {
 		// Check to see if the mobile theme should be shown - if so, initialize it
 		if ( $this->is_showing_mobile_theme_on_mobile_device() ) {
 			$this->setup_mobile_theme_for_viewing();
+
+			/*
+			For Google Best Practices, leaving off for now due to reports of slowing down
+			header( 'Vary: User-Agent' );
+			*/
 		} else {
 			add_action( 'wp_footer', array( &$this, 'handle_desktop_footer' ) );
 		}
@@ -236,7 +241,7 @@ class WPtouchProThree {
 			if ( !is_array( $free_settings ) ) {
 				$free_settings = maybe_unserialize( $free_settings );
 			}
-			
+
 			if ( $domain == 'wptouch_pro' ) {
 				$defaults->site_title = $free_settings[ 'header-title' ];
 				$defaults->show_wptouch_in_footer = false;
@@ -264,7 +269,7 @@ class WPtouchProThree {
 			if ( $domain == 'foundation' ) {
 				if ( isset( $free_settings[ 'custom-footer-msg' ] ) && $free_settings[ 'custom-footer-msg' ] )  {
 					$defaults->custom_footer_message = $free_settings[ 'custom-footer-msg' ];
-				}	
+				}
 
 				$defaults->homescreen_icon_title = $free_settings[ 'header-title' ];
 
@@ -300,26 +305,26 @@ class WPtouchProThree {
 							$defaults->excluded_tags = implode( ",", $new_tags );
 						}
 					}
-				}				
+				}
 
 				if ( isset( $free_settings[ 'excluded-tag-ids' ] ) && $free_settings[ 'excluded-tag-ids' ] ) {
-					
-				}				
+
+				}
 			}
 
 			if ( $domain == 'bauhaus' ) {
 				if ( $free_settings[ 'link-color' ] != '006bb3' ) {
-					$defaults->bauhaus_link_color = '#' . $free_settings[ 'link-color' ];	
+					$defaults->bauhaus_link_color = '#' . $free_settings[ 'link-color' ];
 				}
-				
+
 				if ( $free_settings[ 'header-background-color' ] != '000000' ) {
-					$defaults->bauhaus_header_color = '#' . $free_settings[ 'header-background-color' ];	
+					$defaults->bauhaus_header_color = '#' . $free_settings[ 'header-background-color' ];
 				}
-				
+
 				if ( $free_settings[ 'header-border-color' ] != '333333' ) {
-					$defaults->bauhaus_post_page_header_color = '#' . $free_settings[ 'header-border-color' ];	
+					$defaults->bauhaus_post_page_header_color = '#' . $free_settings[ 'header-border-color' ];
 				}
-				
+
 			}
 		}
 
@@ -360,7 +365,7 @@ class WPtouchProThree {
 			foreach( $this->get_critical_notifications() as $notification ) {
 				echo '<p>' . $notification[0] . '</p>';
 			}
-        	echo '</div>';			
+        	echo '</div>';
 		}
 	}
 
@@ -370,7 +375,7 @@ class WPtouchProThree {
 		if ( count( $settings->active_addons ) ) {
 			foreach( $settings->active_addons as $addon_name => $addon_info ) {
 				$addon_file_name = WP_CONTENT_DIR . '/' . $addon_info->location . '/' . $addon_info->addon_name . '/' . $addon_info->addon_name . '.php';
-				
+
 				// Load the add-on file
 				if ( file_exists( $addon_file_name ) ) {
 					require_once( $addon_file_name );
@@ -387,7 +392,7 @@ class WPtouchProThree {
 
 	function set_cache_cookie() {
 		global $wptouch_pro;
-		
+
 		$cookie_value = 'desktop';
 		if ( $this->is_mobile_device ) {
 			if ( $this->showing_mobile_theme ) {
@@ -396,16 +401,16 @@ class WPtouchProThree {
 				$cookie_value = 'mobile-desktop';
 			}
 		}
- 
+
  		if ( !isset( $_COOKIE[ WPTOUCH_CACHE_COOKIE ] ) || ( isset( $_COOKIE[ WPTOUCH_CACHE_COOKIE ] ) && $_COOKIE[ WPTOUCH_CACHE_COOKIE] != $cookie_value ) ) {
 			setcookie( WPTOUCH_CACHE_COOKIE, $cookie_value, time() + 3600, '/' );
-			$_COOKIE[ WPTOUCH_CACHE_COOKIE ] = $cookie_value;			
+			$_COOKIE[ WPTOUCH_CACHE_COOKIE ] = $cookie_value;
 		}
 
 		if ( !is_admin() ) {
 			do_action( 'wptouch_cache_page' );
 		}
-	}	
+	}
 
 	function finish_thumbnail_setup() {
 		$settings = wptouch_get_settings();
@@ -441,7 +446,7 @@ class WPtouchProThree {
 	}
 
 	function setup_desktop_nonce() {
-		$this->desktop_ajax_nonce = wp_create_nonce( 'wptouch-ajax' );	
+		$this->desktop_ajax_nonce = wp_create_nonce( 'wptouch-ajax' );
 	}
 
 	function augment_supported_devices( $devices) {
@@ -540,7 +545,7 @@ class WPtouchProThree {
 			wp_enqueue_script( 'wptouch-pro-ajax', WPTOUCH_URL . '/admin/js/wptouch-ajax.js', array( 'jquery' ) );
 			wp_localize_script( 'wptouch-pro-ajax', 'WPtouchAjax', $ajax_params );
 
-			if ( $theme_broken ) {
+			if ( $theme_broken && !defined( 'WPTOUCH_IS_FREE' ) ) {
 				wp_enqueue_script( 'wptouch-cloud-migrate', WPTOUCH_URL . '/admin/js/wptouch-admin-migrate.js', array( 'wptouch-pro-ajax' ), false, WPTOUCH_VERSION );
 			}
 		}
@@ -565,7 +570,7 @@ class WPtouchProThree {
 			);
 
 			wp_enqueue_script( 'jquery-plugins', WPTOUCH_URL . '/admin/js/wptouch-admin-plugins.js', 'jquery', md5( WPTOUCH_VERSION ) );
-			
+
 			wp_enqueue_script( 'jquery-ui-draggable' );
 			wp_enqueue_script( 'jquery-ui-droppable' );
 
@@ -678,7 +683,7 @@ class WPtouchProThree {
 		if ( !$this->showing_mobile_theme ) {
 			if ( $settings->switch_link_method == 'automatic' || $settings->switch_link_method == 'ajax' ) {
 				add_action( 'wp_footer', array( &$this, 'show_desktop_switch_link' ) );
-			}	
+			}
 		}
 	}
 
@@ -726,7 +731,7 @@ class WPtouchProThree {
 
 	function intercept_template() {
 		if ( is_page() ) {
-			global $post;	
+			global $post;
 
 			require_once( WPTOUCH_DIR .'/core/admin-page-templates.php' );
 			$mobile_template = wptouch_get_page_template( $post->ID );
@@ -741,10 +746,10 @@ class WPtouchProThree {
 				if ( file_exists( $template_file ) ) {
 					include( $template_file );
 					exit;
-				}				
+				}
 			}
 		}
-		
+
 	}
 
 	function check_third_party_plugins() {
@@ -1151,7 +1156,7 @@ class WPtouchProThree {
 			return $addon_info;
 		}
 
-		return false;		
+		return false;
 	}
 
 	function get_theme_information( $theme_location, $theme_url, $custom = false ) {
@@ -1208,9 +1213,9 @@ class WPtouchProThree {
 	function get_addon_directories() {
 		$addon_directories = array();
 
-		$addon_directories[] = array( WPTOUCH_DIR . '/extensions', WPTOUCH_URL . '/extensions' );	
+		$addon_directories[] = array( WPTOUCH_DIR . '/extensions', WPTOUCH_URL . '/extensions' );
 
-		return apply_filters( 'wptouch_addon_directories', $addon_directories );		
+		return apply_filters( 'wptouch_addon_directories', $addon_directories );
 	}
 
 	function should_skip_file( $f ) {
@@ -1250,10 +1255,10 @@ class WPtouchProThree {
 
 		if ( $include_cloud ) {
 			if ( false === ( $cloud_addons = get_transient( '_wptouch_available_cloud_addons' ) ) ) {
-			 	$cloud_addons = wptouch_get_available_cloud_addons();   
+			 	$cloud_addons = wptouch_get_available_cloud_addons();
 
 			 	set_transient( '_wptouch_available_cloud_addons', $cloud_addons, WPTOUCH_THEME_ADDON_TRANSIENT_TIME );
-			}	
+			}
 
 			$to_add = array();
 			if ( is_array( $cloud_addons ) && count( $cloud_addons ) ) {
@@ -1269,26 +1274,26 @@ class WPtouchProThree {
 						$this_addon->location = 'cloud';
 
 						if ( isset( $cloud_addon[ 'upgrade_url' ] ) ) {
-							$this_addon->download_url = $cloud_addon[ 'upgrade_url' ];	
+							$this_addon->download_url = $cloud_addon[ 'upgrade_url' ];
 						}
-						
+
 						if ( isset( $cloud_addon[ 'buy_url' ] ) ) {
-							$this_addon->buy_url = $cloud_addon[ 'buy_url' ];	
+							$this_addon->buy_url = $cloud_addon[ 'buy_url' ];
 						}
 
 						if ( isset( $cloud_addon[ 'info_url' ] ) ) {
-							$this_addon->info_url = $cloud_addon[ 'info_url' ];	
+							$this_addon->info_url = $cloud_addon[ 'info_url' ];
 						}
 
 						$to_add[ $this_addon->name ] = $this_addon;
 					} else {
 						$this_addon = $addons[ $cloud_addon[ 'name' ] ];
-						
+
 						$this_addon->cloud_version = $cloud_addon[ 'version' ];
 						$this_addon->upgrade_available = $cloud_addon[ 'version' ] != $this_addon->version;
 
 						if ( isset( $cloud_addon[ 'upgrade_url' ] ) ) {
-							$this_addon->download_url = $cloud_addon[ 'upgrade_url' ];	
+							$this_addon->download_url = $cloud_addon[ 'upgrade_url' ];
 						}
 
 						$addons[ $cloud_addon[ 'name' ] ] = $this_addon;
@@ -1336,10 +1341,10 @@ class WPtouchProThree {
 
 		if ( $include_cloud ) {
 			if ( false === ( $cloud_themes = get_transient( '_wptouch_available_cloud_themes' ) ) ) {
-			 	$cloud_themes = wptouch_get_available_cloud_themes();   
+			 	$cloud_themes = wptouch_get_available_cloud_themes();
 
 			 	set_transient( '_wptouch_available_cloud_themes', $cloud_themes, WPTOUCH_THEME_ADDON_TRANSIENT_TIME );
-			}			
+			}
 
 			$to_add = array();
 			if ( is_array( $cloud_themes ) && count( $cloud_themes ) ) {
@@ -1356,31 +1361,31 @@ class WPtouchProThree {
 						$this_theme->custom_theme = true;
 
 						if ( isset( $cloud_theme[ 'theme_type' ] ) ) {
-							$this_theme->theme_type = $cloud_theme[ 'theme_type' ];	
+							$this_theme->theme_type = $cloud_theme[ 'theme_type' ];
 						}
 
 						if ( isset( $cloud_theme[ 'info_url' ] ) ) {
-							$this_theme->info_url = $cloud_theme[ 'info_url' ];	
-						}						
-						
-						if ( isset( $cloud_theme[ 'upgrade_url' ] ) ) {
-							$this_theme->download_url = $cloud_theme[ 'upgrade_url' ];	
+							$this_theme->info_url = $cloud_theme[ 'info_url' ];
 						}
-						
+
+						if ( isset( $cloud_theme[ 'upgrade_url' ] ) ) {
+							$this_theme->download_url = $cloud_theme[ 'upgrade_url' ];
+						}
+
 						if ( isset( $cloud_theme[ 'buy_url' ] ) ) {
-							$this_theme->buy_url = $cloud_theme[ 'buy_url' ];	
+							$this_theme->buy_url = $cloud_theme[ 'buy_url' ];
 						}
 
 						$to_add[ $this_theme->name ] = $this_theme;
 					} else {
-											
+
 						$this_theme = $themes[ $cloud_theme[ 'name' ] ];
-						
+
 						$this_theme->cloud_version = $cloud_theme[ 'version' ];
 
 						if ( isset( $cloud_theme[ 'upgrade_url' ] ) ) {
 							$this_theme->upgrade_available = $cloud_theme[ 'version' ] != $this_theme->version;
-							$this_theme->download_url = $cloud_theme[ 'upgrade_url' ];	
+							$this_theme->download_url = $cloud_theme[ 'upgrade_url' ];
 						}
 
 						$themes[ $cloud_theme[ 'name' ] ] = $this_theme;
@@ -1389,7 +1394,7 @@ class WPtouchProThree {
 
 				$themes = array_merge( $themes, $to_add );
 			}
-		}		
+		}
 
 		ksort( $themes );
 
@@ -1674,7 +1679,7 @@ class WPtouchProThree {
 
 	function add_critical_notification( $information ) {
 		$this->critical_notifications[] = array( $information );
-	}	
+	}
 
 	function get_critical_notifications() {
 		return $this->critical_notifications;
@@ -1812,7 +1817,7 @@ class WPtouchProThree {
 			if ( in_array( $domain, $site_wide_domains ) ) {
 				$site_wide = true;
 			}
-		}		
+		}
 
 		return $site_wide;
 	}
@@ -1827,7 +1832,7 @@ class WPtouchProThree {
 
 		if ( isset( $this->settings_objects[ $domain ] ) ) {
 			// settings have been loaded before
-	
+
 			$settings = $this->settings_objects[ $domain ];
 
 			WPTOUCH_DEBUG( WPTOUCH_INFO, '.. Returning previously loaded settings ' . $domain );
@@ -1844,7 +1849,7 @@ class WPtouchProThree {
 			}
 
 			WPTOUCH_DEBUG( WPTOUCH_INFO, '.. Loading settings from database ' . $domain );
-			
+
 			if ( !$settings ) {
 				// Nothing stored in the database, return default settings
 				WPTOUCH_DEBUG( WPTOUCH_INFO, '..What, no chicken? ' . $domain );
@@ -2059,7 +2064,7 @@ class WPtouchProThree {
 		}
 	}
 
-	function delete_theme_add_on_cache() {					
+	function delete_theme_add_on_cache() {
 		delete_transient( '_wptouch_available_cloud_addons' );
 		delete_transient( '_wptouch_available_cloud_themes' );
 	}
@@ -2128,7 +2133,7 @@ class WPtouchProThree {
 
 				if ( $key == 'default' ) {
 					$key = $settings->wptouch_license_key;
-				}			
+				}
 			}
 
 			$this->bnc_api = new BNCAPI( $bncid, $key );
@@ -2331,31 +2336,11 @@ class WPtouchProThree {
 		// Add the default stylesheet to the end, use min if available
 		$dependencies = array();
 		if ( $this->has_parent_theme() ) {
-			$dependencies = array( 'wptouch-parent' );
 			$parent_info = $this->get_parent_theme_info();
+			$css_file = $this->check_and_use_css_file( '/themes/foundation/' . $this->get_active_device_class() . '/style.css' );
 
-			$css_file = $this->check_and_use_css_file(
-				$parent_info->location . '/' . $this->get_active_device_class() . '/style.css',
-				WP_CONTENT_DIR,
-				WP_CONTENT_URL
-			);
-
-			wp_enqueue_style( 'wptouch-parent', wptouch_check_url_ssl( $css_file ), false, WPTOUCH_VERSION );
+			wp_enqueue_style( 'wptouch-parent-theme-css', wptouch_check_url_ssl( $css_file ), false, WPTOUCH_VERSION );
 			do_action( 'wptouch_parent_style_queued' );
-
-			// Load parent RTL css file
-			if ( wptouch_should_load_rtl() && file_exists( WP_CONTENT_DIR . '/' . $parent_info->location . '/' . $this->get_active_device_class() . '/' . $parent_info->location . '-rtl.css' ) ) {
-				wp_enqueue_style(
-					'wptouch-parent-rtl',
-					wptouch_check_url_ssl( $this->check_and_use_css_file(
-						$parent_info->location . '/' . $this->get_active_device_class() . '/' . $parent_info->location . '-rtl.css',
-						WP_CONTENT_DIR,
-						WP_CONTENT_URL
-					) ),
-		 			array( 'wptouch-parent' ),
-		 			WPTOUCH_VERSION
-		 		);
-			}
 		}
 
 		$css_file = $this->check_and_use_css_file(
@@ -2364,7 +2349,7 @@ class WPtouchProThree {
 			WP_CONTENT_URL
 		);
 
-		wp_enqueue_style( 'wptouch', wptouch_check_url_ssl( $css_file ), $dependencies, WPTOUCH_VERSION );
+		wp_enqueue_style( 'wptouch-theme-css', wptouch_check_url_ssl( $css_file ), 'wptouch-parent-theme-css', WPTOUCH_VERSION );
 
 		// Load child RTL css file
 		if ( wptouch_should_load_rtl() && file_exists( WP_CONTENT_DIR . '/' . $settings->current_theme_location . '/' . $settings->current_theme_name . '/' . $this->get_active_device_class() . '/' . $settings->current_theme_name . '-rtl.css' ) ) {
@@ -2375,30 +2360,32 @@ class WPtouchProThree {
 					WP_CONTENT_DIR,
 					WP_CONTENT_URL
 				) ),
-	 			array( 'wptouch' ),
+	 			array( 'wptouch-theme-css' ),
 	 			WPTOUCH_VERSION
 	 		);
-	 		
+
 		}
 	}
 
 	function setup_child_theme_styles() {
 		$css_file = $this->check_and_use_css_file( $this->get_stylesheet_directory( false )  . '/style.css' );
-		wp_enqueue_style( 'wptouch_child', wptouch_check_url_ssl( $css_file ), array( 'wptouch-parent' ), WPTOUCH_VERSION );
+		wp_enqueue_style( 'wptouch_child', wptouch_check_url_ssl( $css_file ), array( 'wptouch-parent-theme-css' ), WPTOUCH_VERSION );
 	}
 
 	function handle_desktop_switch_ajax() {
 		$this->show_desktop_switch_link( true );
-		
+
 		die;
 	}
 
 	function handle_desktop_footer() {
-		if ( defined( 'WPTOUCH_IS_FREE' ) ) {
-			echo "<!-- Powered by WPtouch: " . WPTOUCH_VERSION . " -->";
-		} else {
-			echo "<!-- Powered by WPtouch Pro: " . WPTOUCH_VERSION . " -->";	
-		}	
+		if ( !is_feed() ) {
+			if ( defined( 'WPTOUCH_IS_FREE' ) ) {
+				echo "<!-- Powered by WPtouch: " . WPTOUCH_VERSION . " -->";
+			} else {
+				echo "<!-- Powered by WPtouch Pro: " . WPTOUCH_VERSION . " -->";
+			}			
+		}
 	}
 
 	function show_desktop_switch_link( $ajax_request = false ) {
@@ -2421,7 +2408,7 @@ class WPtouchProThree {
 			if ( $settings->switch_link_method == 'ajax' ) {
 				echo "<div id='wptouch_desktop_switch'></div>\n";
 				echo "<script type='text/javascript'>var wptouchAjaxUrl = '" . admin_url( 'admin-ajax.php' ) . "'; wptouchAjaxNonce = '" . $this->desktop_ajax_nonce . "'; wptouchAjaxSwitchLocation = '" . esc_attr( $_SERVER[ 'REQUEST_URI' ] ) . "';</script>\n";
-				echo "<script type='text/javascript' src='" . WPTOUCH_URL . "/include/js/desktop-switch.js'></script>\n";				
+				echo "<script type='text/javascript' src='" . WPTOUCH_URL . "/include/js/desktop-switch.js'></script>\n";
 			} else if ( $this->is_mobile_device && !$this->showing_mobile_theme ) {
 				wptouch_show_desktop_switch_link();
 			}
@@ -2467,7 +2454,7 @@ class WPtouchProThree {
 				if ( $this->is_domain_site_wide( $domain ) ) {
 					delete_site_option( $setting_name );
 				} else {
-					delete_option( $setting_name );	
+					delete_option( $setting_name );
 				}
 			}
 		}
@@ -2522,13 +2509,13 @@ class WPtouchProThree {
 		$setting_name = $this->get_wp_setting_name_for_domain( $domain );
 
 		if ( $this->is_domain_site_wide( $domain ) ) {
-			WPTOUCH_DEBUG( WPTOUCH_VERBOSE, 'Saving site wide option for domain ' . $domain ); 
-			update_site_option( $setting_name, $settings );	
+			WPTOUCH_DEBUG( WPTOUCH_VERBOSE, 'Saving site wide option for domain ' . $domain );
+			update_site_option( $setting_name, $settings );
 		} else {
-			WPTOUCH_DEBUG( WPTOUCH_VERBOSE, 'Saving non-site wide option for domain ' . $domain ); 
-			update_option( $setting_name, $settings );	
+			WPTOUCH_DEBUG( WPTOUCH_VERBOSE, 'Saving non-site wide option for domain ' . $domain );
+			update_option( $setting_name, $settings );
 		}
-		
+
 		// Restore old domain
 		$settings->domain = $old_domain;
 
@@ -2536,7 +2523,7 @@ class WPtouchProThree {
 
 		$this->settings_objects[ $domain ] = $settings;
 
-		do_action( 'wptouch_update_settings_domain_' . $domain );		
+		do_action( 'wptouch_update_settings_domain_' . $domain );
 	}
 
 	function recursive_copy( $source_dir, $dest_dir ) {

@@ -3,7 +3,7 @@ Contributors: peplamb
 Donate link: http://peplamb.com/donate/
 Tags: peplamb, widget, clickable, linkable, linked title, text, php, linked title text, linked, Text Widget, Php Widget, Clickable Title Text Widget, Linkable Title Text Widget, Clickable Title php Widget, Linkable Title php Widget
 Requires at least: 2.8.0
-Tested up to: 3.7.1
+Tested up to: 3.8
 Stable tag: trunk
 
 A widget where you may have Text, HTML, Javascript, Flash and/or Php as content with linkable/clickable widget title. 
@@ -45,9 +45,14 @@ Please visit <a href="http://peplamb.com/linkable-title-html-and-php-widget/" ta
 
 == Changelog ==
 
+= 1.2.6 =
+* Maintenance Release.
+* Admin Mobile Enabled.
+* Tested up to WP 3.8.
+
 = 1.2.5 =
 * Maintenance Release.
-* Tested up to WP 1.7.1.
+* Tested up to WP 3.7.1.
 
 = 1.2.4 =
 * Maintenance Release.

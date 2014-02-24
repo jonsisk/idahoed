@@ -3,7 +3,7 @@
 Plugin Name: Linkable Title Html and Php Widget by PepLamb
 Plugin URI: http://peplamb.com/linkable-title-html-and-php-widget/
 Description: <a href="http://peplamb.com/linkable-title-html-and-php-widget/" target="_blank">Linkable Title Html and Php Widget</a> by <a href="http://peplamb.com/linkable-title-html-and-php-widget/" target="_blank">PepLamb</a>! Using this plugin you may have Text, HTML, Javascript, Flash and/or Php as content in this widget with linkable widget titles, so this is a plus compared to the default wordpress' text widget. This plugin is a personal open source project. Started in 2009, I have put considerable amount of hours adding, refining, tuning, fixing, maintaining the plugin with the goal to make it useful and add to Wordpress community. I need your help to achieve this. <a href='https://pledgie.com/campaigns/23211' target="_blank">Donate</a>
-Version: 1.2.5
+Version: 1.2.6
 Author: PepLamb
 Author URI: http://peplamb.com/
 */
