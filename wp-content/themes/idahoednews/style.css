@@ -194,7 +194,7 @@ body {
 	}
 
 #navpages ul li a{
-	font:bold 11px arial, tahoma, verdana, sans-serif;
+	font:bold 12px arial, tahoma, verdana, sans-serif;
 	display: block;
 	color:#010d37;
 	text-transform:uppercase;
@@ -1734,4 +1734,17 @@ h2.theEdgeTitle a{
 	}
 .cat-chicklets .elections {
 	background: #00760a;
+	}
+.google_top_posts ol {
+	list-style: decimal inside;
+	text-indent: -17px;
+	margin: 0 5px 0 19px;
+	}
+.google_top_posts ol li{
+	margin-bottom: 7px;
+	font-size: 13px;
+	}
+.gtc_view_count {
+	font-size: 11px;
+	color: black;
 	}
