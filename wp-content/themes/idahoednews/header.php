@@ -11,7 +11,7 @@
 		<?php if(is_search()) { ?><?php _e('Search results for:','WpAdvNewspaper'); ?> <?php echo wp_specialchars($s, 1); ?> | <?php bloginfo('name'); } ?>
 	</title>
 	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/style.css?v=1.2">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/style.css?v=1.4">
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php if ( $npdv_options["feedlink"] <> "" ) { echo $npdv_options["feedlink"]; } else { echo bloginfo('rss2_url'); } ?>" />	
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php if ( $npdv_options["feedlink"] <> "" ) { echo $npdv_options["feedlink"]; } else { echo bloginfo('rss_url'); } ?>" />	
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />	
