@@ -1748,3 +1748,6 @@ h2.theEdgeTitle a{
 	font-size: 11px;
 	color: black;
 	}
+#wideSidebar .gtc_view_count {
+	display:none;
+	}

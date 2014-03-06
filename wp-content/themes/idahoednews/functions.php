@@ -55,7 +55,7 @@ function gtc_add_viewcount_title( $pages ) {
 	// loop through the pages
 	foreach ( $pages as $key => $page ) {
 		// and add the page count to the title value
-		$pages[$key]['children']['value'] = $pages[$key]['children']['value'] . '<br><span class="gtc_view_count">[ '. $pages[$key]['children']['children']['ga:pageviews'] .' Views ]</span>';
+		$pages[$key]['children']['value'] = $pages[$key]['children']['value'] . '<br><span class="gtc_view_count">['. $pages[$key]['children']['children']['ga:pageviews'] .' Views]</span>';
 	}
 	return $pages;
 }
