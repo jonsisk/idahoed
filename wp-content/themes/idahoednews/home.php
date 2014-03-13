@@ -131,7 +131,7 @@ ul.enterprise a:hover {
 				while ($gabquery->have_posts()) : $gabquery->the_post(); 
 				?>
 					<div class="featuredPost2">
-						<?php if ($count == 1) { ?><span class="titleCatName"><a style="text-transform:none;" href="<?php echo get_category_link($npdv_options["breakingNewsCatID"]);?>">The EDge - Kevin Richert's Idaho Education Blog</a></span><?php } ?>
+						<?php if ($count == 1) { ?><span class="titleCatName"><a style="text-transform:none;" href="/the-edge-blog/">The EDge - Kevin Richert's Idaho Education Blog</a></span><?php } ?>
 						<?php 
 						gab_media(array(
 							'name' => 'npdv-below_featured', 

@@ -273,7 +273,7 @@ class GA_Top_Content {
 
 
 		$list = apply_filters( 'gtc_list_output', $list );
-		set_transient( 'dw-gtc-list-'.$number, $list, 86400 );
+		set_transient( 'dw-gtc-list-'.$number, $list, 600);
 		return $transuse . $list . $transuse;
 
 	}
@@ -316,7 +316,7 @@ class GA_Top_Content {
 			$count = isset( $data['value'] ) ? $data['value'] : 0;
 
 			if ( $count ) {
-				set_transient( 'dw-gtc-views-'.$atts['post_id'], $count, 86400 );
+				set_transient( 'dw-gtc-views-'.$atts['post_id'], $count, 600 );
 			}
 
 		}
