@@ -1,47 +1,4 @@
 <?php get_header(); ?>
-<style>
-ul.enterprise {
-	list-style:bullet;
-	}
-ul.enterprise a {
-	color:black;
-	font-size:14px;
-	line-height:22px;
-	}
-ul.enterprise a:hover {
-	text-decoration:underline;
-	}
-.cat-chicklets {
-	float:right;
-	}
-.postmetatext {
-	float:left;
-	}
-.midColPostMeta,
-.featuredPost2Meta {
-	min-height:20px;
-	}
-.cat-chicklet{
-	padding: 0 4px 0;
-	margin: 0 0 0 4px;
-	float:right;
-	color:white;
-	text-transform:capitalize;
-	border-radius: 5px;
-	}
-.cat-chicklets .briefs {
-	background: #006782;
-	}
-.cat-chicklets .governor {
-	background: #810e00;
-	}
-.cat-chicklets .superintendents {
-	background:#5C3317;
-	}
-.cat-chicklets .elections {
-	background: #00760a;
-	}
-</style>
 	<div id="primaryTopWrapper">
 		<div id="featuredContent">
 			<?php if (intval($npdv_options["feaPostCount"]) > 0 ) { ?>
