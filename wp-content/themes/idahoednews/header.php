@@ -11,7 +11,7 @@
 		<?php if(is_search()) { ?><?php _e('Search results for:','WpAdvNewspaper'); ?> <?php echo wp_specialchars($s, 1); ?> | <?php bloginfo('name'); } ?>
 	</title>
 	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/style.css?v=1.4">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/style.css?v=1.5">
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php if ( $npdv_options["feedlink"] <> "" ) { echo $npdv_options["feedlink"]; } else { echo bloginfo('rss2_url'); } ?>" />	
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php if ( $npdv_options["feedlink"] <> "" ) { echo $npdv_options["feedlink"]; } else { echo bloginfo('rss_url'); } ?>" />	
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />	
@@ -57,12 +57,11 @@
 		<div id="header_newsletter">
 			<style type="text/css">
 				#mc_embed_signup{background:#fff; clear:left; font:10px Helvetica,Arial,sans-serif; }
-				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-				We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 			</style>
+			<span>Subscribe to our newsletter for the week's best stories</span>
 			<form action="http://boisestate.us4.list-manage.com/subscribe/post?u=5be8de5937d5d7832b6259d69&amp;id=622c84586f" method="post" id=	"mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-				<input type="submit" value="Subscribe to Newsletter" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button">
 			</form>
 		</div>
 		</div>
