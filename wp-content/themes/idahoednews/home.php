@@ -181,6 +181,7 @@
 				<!-- End of first set of entries to the right of featured slider -->
 			<?php } ?>
 
+			<?php /* Disabled Special Features
 			<!-- Start Special Primary Election Coverage -->
 			<div class="midColPost" style="border-top: 1px solid #efefef;">
 				<a href="/tag/primary"><img src="http://www.idahoednews.org/wp-content/themes/idahoednews/images/primary-election-coverage.jpg" /></a>
@@ -190,7 +191,7 @@
 			<div class="midColPost" style="border-top: 1px solid #efefef;">
 				<a href="/tag/superrace"><img src="http://www.idahoednews.org/wp-content/themes/idahoednews/images/superintendent-race.jpg" /></a>
 			</div>
-			
+			*/ ?>
 			<!-- Start Enterprise Package -->
 			<?php /* Disabled for bill tracker
 			
