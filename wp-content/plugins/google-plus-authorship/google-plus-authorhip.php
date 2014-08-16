@@ -14,7 +14,6 @@ function get_google_plus_authorship_link ($gplus_return='') {
 	$gplus_author_name = esc_attr( get_the_author_meta( 'gplus_author_name', $user->ID ) );
 	$gplus_author_display = esc_attr( get_the_author_meta( 'display_name', $user->ID ) );	
 	$gplus_author_url = esc_attr( get_the_author_meta( 'gplus_author_url', $user->ID ) );
-	$author_name = "+";
 	$gplus_return .= '<a href="'.$gplus_author_url.'" rel="author"';
 	$gplus_return .= ' title="Google Plus Profile for '.$author_name.'" plugin="Google Plus Authorship">'.$author_name.'</a>';
 	return $gplus_return;

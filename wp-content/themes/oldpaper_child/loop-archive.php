@@ -1,9 +1,8 @@
 <?php global $iw_opt ?>
 
-<div class="articlebox">
+<div class="articlebox<?php if (in_category('voices')) { echo ' voices'; } ?>">
 
 <article <?php post_class('row animated') ?> id="post-<?php the_id() ?>" data-anim="fadeInUp">
-	
 	<?php if( has_post_format('quote') ) : ?>
 	
 		<div class="col-sm-10 col-sm-offset-1">
@@ -105,7 +104,10 @@
 		</div>
 	
 	<?php endif; ?>
-	
+	<div class="clear"></div>
+	<div class="tagslist">
+		<?php the_tags('<p><i class="fa fa-tags fa-fw"></i> ', ', ', '</p>') ?>
+	</div>
 </article>
 
 </div>

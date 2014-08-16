@@ -62,21 +62,6 @@ $options = get_option('iw_opt');
 		
 		/* secondary color */
 		
-		section#top a:hover,
-		#mainmenu > li > a:hover,
-		.widget h4,
-		section#content main #featured p time,
-		#content a:hover, #content a:focus,
-		footer a:hover, footer a:focus,
-		nav .wrapper #bars .fa-square,
-		nav #respmenu a:hover,
-		section#chess article .info ul,
-		section#content aside .wrapper p time,
-		#breakingnews a:hover,
-		.carousel .textinfo{
-			color: <?php echo $iw_opt['secondary-color']; ?> !important;
-		}
-		
 		nav .wrapper #mainmenu li.menu-item-has-children ul.sub-menu,
 		.countcomments{
 			background-color: <?php echo $iw_opt['secondary-color']; ?> !important;
